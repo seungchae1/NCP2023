@@ -64,5 +64,12 @@ namespace NCP2023
                                            orderby item.Writer
                                            select item;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            bookBindingSource.DataSource = from item in books
+                                           orderby item.Category
+                                           select item;
+        }
     }
 }
