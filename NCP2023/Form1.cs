@@ -50,5 +50,10 @@ namespace NCP2023
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bookBindingSource.DataSource = books;
+        }
     }
 }
