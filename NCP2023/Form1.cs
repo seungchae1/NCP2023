@@ -48,7 +48,9 @@ namespace NCP2023
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            bookBindingSource.DataSource = from item in books
+                                           orderby item.Title
+                                           select item;
         }
 
         private void button1_Click(object sender, EventArgs e)
