@@ -71,5 +71,13 @@ namespace NCP2023
                                            orderby item.Category
                                            select item;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            bookBindingSource.DataSource = from item in books
+                                           where item.Rank <= 5
+                                           orderby item.Rank
+                                           select item;
+        }
     }
 }
