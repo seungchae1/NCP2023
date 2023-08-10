@@ -43,7 +43,7 @@ namespace NCP2023
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            bookBindingSource.DataSource = books;
         }
 
         private void button2_Click(object sender, EventArgs e)
