@@ -35,11 +35,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.writerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +72,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "저자순";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -107,10 +108,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(838, 351);
             this.dataGridView1.TabIndex = 5;
             // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(NCP2023.Book);
-            // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
@@ -134,6 +131,10 @@
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(NCP2023.Book);
             // 
             // Form1
             // 

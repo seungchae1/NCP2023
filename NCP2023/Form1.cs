@@ -57,5 +57,12 @@ namespace NCP2023
         {
             bookBindingSource.DataSource = books;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bookBindingSource.DataSource = from item in books
+                                           orderby item.Writer
+                                           select item;
+        }
     }
 }
